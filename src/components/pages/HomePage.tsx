@@ -82,9 +82,6 @@ const HomePage = ({ onNavigate }: HomePageProps) => {
                 <button onClick={() => onNavigate('about')} className="text-[#183B4E] dark:text-[#F3F3E0] hover:underline">
                   EN
                 </button>
-                <button onClick={() => onNavigate('work')} className="text-[#183B4E] dark:text-[#F3F3E0] hover:underline">
-                  RU
-                </button>
                 <button onClick={() => onNavigate('contact')} className="text-[#183B4E] dark:text-[#F3F3E0] hover:underline">
                   FR
                 </button>

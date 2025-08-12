@@ -144,12 +144,6 @@ const DrawerNavigation = () => {
                           EN
                         </button>
                         <button
-                          onClick={() => setLanguage('ru')}
-                          className={`text-[#183B4E] hover:underline font-normal ${language === 'ru' ? 'underline font-medium' : ''}`}
-                        >
-                          RU
-                        </button>
-                        <button
                           onClick={() => setLanguage('fr')}
                           className={`text-[#183B4E] hover:underline font-normal ${language === 'fr' ? 'underline font-medium' : ''}`}
                         >
