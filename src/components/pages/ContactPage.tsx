@@ -35,7 +35,7 @@ const ContactPage = ({ onNavigate }: ContactPageProps) => {
             transition={{ delay: 0.2, duration: 0.8 }}
           >
             <p className="text-lg mb-10" style={{ color: textColor }}>
-              I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
+              I&apos;m always open to discussing new projects, creative ideas or opportunities to be part of your vision.
             </p>
 
             <div className="space-y-6 mb-10">

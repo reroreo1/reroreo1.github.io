@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTheme } from '@/context/ThemeContext';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 
 const SlideNavigation = () => {
   const pathname = usePathname();
@@ -39,11 +39,11 @@ const SlideNavigation = () => {
     };
   }, [isOpen]);
 
-  const menuVariants = {
+  const menuVariants: Variants = {
     closed: {
       x: "100%",
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 400,
         damping: 40
       }
@@ -51,7 +51,7 @@ const SlideNavigation = () => {
     open: {
       x: 0,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 400,
         damping: 40,
         staggerChildren: 0.1,
@@ -60,7 +60,7 @@ const SlideNavigation = () => {
     }
   };
 
-  const linkVariants = {
+  const linkVariants: Variants = {
     closed: { 
       x: 50, 
       opacity: 0 
@@ -69,7 +69,7 @@ const SlideNavigation = () => {
       x: 0, 
       opacity: 1,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 300,
         damping: 30
       }

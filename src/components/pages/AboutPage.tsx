@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+//@typescript-eslint/no-unused-vars
 import { motion } from 'framer-motion';
 import { useTheme } from '@/context/ThemeContext';
 import Image from 'next/image';
@@ -14,10 +15,6 @@ const AboutPage = ({ onNavigate }: AboutPageProps) => {
 
   // Using our color palette in order: #F3F3E0 (cream), #27548A (blue), #183B4E (navy), #DDA853 (gold)
   const textColor = theme === 'dark' ? '#F3F3E0' : '#183B4E';
-  const primaryColor = '#F3F3E0'; // Cream as primary
-  const secondaryColor = '#27548A'; // Blue as secondary
-  const tertiaryColor = '#183B4E'; // Navy as tertiary
-  const accentColor = '#DDA853'; // Gold as accent
 
   return (
     <section className="w-full h-screen flex flex-col items-center justify-center overflow-hidden bg-cream dark:bg-navy">
@@ -39,7 +36,7 @@ const AboutPage = ({ onNavigate }: AboutPageProps) => {
 
           <div className="space-y-6" style={{ color: textColor }}>
             <p className="text-lg">
-              I'm a Lead Developer at OS Websolutions with a passion for building complex systems and data-driven solutions.
+              I m a Lead Developer at OS Websolutions with a passion for building complex systems and data-driven solutions.
             </p>
 
             <p className="text-lg">

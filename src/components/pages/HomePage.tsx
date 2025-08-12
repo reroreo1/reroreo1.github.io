@@ -1,8 +1,6 @@
 "use client";
 
 import React from 'react';
-import { motion } from 'framer-motion';
-import { useTheme } from '@/context/ThemeContext';
 import { FaLinkedin, FaInstagram, FaPinterest } from 'react-icons/fa';
 
 interface HomePageProps {
@@ -10,7 +8,6 @@ interface HomePageProps {
 }
 
 const HomePage = ({ onNavigate }: HomePageProps) => {
-  const { theme } = useTheme();
 
   return (
     <div className="min-h-screen bg-[#F3F3E0] dark:bg-[#183B4E] font-radley overflow-auto">
@@ -20,7 +17,7 @@ const HomePage = ({ onNavigate }: HomePageProps) => {
           <div className="md:col-span-5 flex flex-col justify-between h-full">
             <div className="text-right">
               <h1 className="text-4xl md:text-5xl text-[#183B4E] dark:text-[#F3F3E0] font-normal leading-tight">
-                I'm Miki, a product<br />designer from<br />NYC.<span className="ml-1">✌️</span>
+                I&apos;m Miki, a product<br />designer from<br />NYC.<span className="ml-1">✌️</span>
               </h1>
             </div>
 
@@ -64,18 +61,18 @@ const HomePage = ({ onNavigate }: HomePageProps) => {
               <p className="text-[#183B4E] dark:text-[#F3F3E0] mb-6 text-base leading-relaxed">
                 I spend most of my time maintaining a solid caffeine buzz and looking for dogs shaped like
                 potatoes or piggies. Spotting a soup or a meatball is 100 points. Dogs are perfect in every
-                way, however, if they're very yappy (like chihuahuas), you must train the ability to bark.
+                way, however, if they&apos;re very yappy (like chihuahuas), you must train the ability to bark.
               </p>
               <p className="text-[#183B4E] dark:text-[#F3F3E0] mb-6 text-base leading-relaxed">
-                Further, I feel that improperly named foods are a missed opportunity. "Eggplant" is one of
+                Further, I feel that improperly named foods are a missed opportunity. &quot;Eggplant&quot; is one of
                 the worst offenders (of second place). Some other things that distress me include: speaking
                 before thinking, animals wearing real gems, sitting on the bed, the beach, sticks with empty
-                pockets (lowest socks?), people who don't let you get off the train before stepping in, and pizza
+                pockets (lowest socks?), people who don&apos;t let you get off the train before stepping in, and pizza
                 that has no structural integrity.
               </p>
               <p className="text-[#183B4E] dark:text-[#F3F3E0] text-base leading-relaxed">
-                Things that don't vex me? Podcasts, writing for pleasure, reading for self-improvement, the
-                critically acclaimed film "The Room," and many others. I'm an over thinker—not a
+                Things that don&apos;t vex me? Podcasts, writing for pleasure, reading for self-improvement, the
+                critically acclaimed film &quot;The Room,&quot; and many others. I&apos;m an over thinker—not a
                 pessimist—and a designer from Queens, living and working in Manhattan.
               </p>
             </div>

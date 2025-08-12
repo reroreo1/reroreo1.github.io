@@ -2,21 +2,12 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useTheme } from '@/context/ThemeContext';
-import Image from 'next/image';
 
 interface WorkPageProps {
   onNavigate: (page: string) => void;
 }
 
 const WorkPage = ({ onNavigate }: WorkPageProps) => {
-  const { theme } = useTheme();
-
-  // Using our color palette in order: #F3F3E0 (cream), #27548A (blue), #183B4E (navy), #DDA853 (gold)
-  const textColor = theme === 'dark' ? '#F3F3E0' : '#183B4E';
-  const primaryColor = '#F3F3E0'; // Cream as primary
-  const secondaryColor = '#27548A'; // Blue as secondary
-  const tertiaryColor = '#183B4E'; // Navy as tertiary
   const accentColor = '#27548A'; // Blue as accent for Work page
 
   const projects = [

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTheme } from '@/context/ThemeContext';
+
 
 interface PageTransitionProps {
   children: React.ReactNode;
@@ -10,7 +10,6 @@ interface PageTransitionProps {
 }
 
 const PageTransition = ({ children, currentPage }: PageTransitionProps) => {
-  const { theme } = useTheme();
   const [isAnimating, setIsAnimating] = useState(false);
 
   // Prevent scrolling during transitions
@@ -35,7 +34,7 @@ const PageTransition = ({ children, currentPage }: PageTransitionProps) => {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: [0.22, 1, 0.36, 1],
+        ease: [0.22, 1, 0.36, 1] as const,
       },
     },
     exit: {
@@ -43,7 +42,7 @@ const PageTransition = ({ children, currentPage }: PageTransitionProps) => {
       y: -50,
       transition: {
         duration: 0.5,
-        ease: [0.22, 1, 0.36, 1],
+        ease: [0.22, 1, 0.36, 1] as const,
       },
     },
   };
